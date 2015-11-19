@@ -6,9 +6,6 @@ import org.elasticsearch.es4sql.domain.Field;
 
 import java.util.List;
 
-/**
- * Created by Eliran on 28/8/2015.
- */
 public class TableInJoinRequestBuilder {
     private SearchRequestBuilder requestBuilder;
     private String alias;

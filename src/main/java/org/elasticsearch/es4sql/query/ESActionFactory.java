@@ -3,7 +3,6 @@ package org.elasticsearch.es4sql.query;
 
 import com.alibaba.druid.sql.ast.SQLExpr;
 import com.alibaba.druid.sql.ast.expr.SQLQueryExpr;
-import com.alibaba.druid.sql.ast.statement.SQLDeleteStatement;
 import com.alibaba.druid.sql.ast.statement.SQLJoinTableSource;
 import com.alibaba.druid.sql.dialect.mysql.ast.statement.MySqlSelectQueryBlock;
 import com.alibaba.druid.sql.dialect.mysql.parser.MySqlStatementParser;
@@ -15,11 +14,10 @@ import org.elasticsearch.es4sql.parse.ElasticLexer;
 import org.elasticsearch.es4sql.parse.ElasticSqlExprParser;
 import org.elasticsearch.es4sql.parse.SubQueryExpression;
 import org.elasticsearch.es4sql.query.join.ESJoinQueryActionFactory;
-import org.elasticsearch.plugin.nlpcn.ElasticResultHandler;
-import org.elasticsearch.plugin.nlpcn.QueryActionElasticExecutor;
+import org.elasticsearch.es4sql.executors.ElasticResultHandler;
+import org.elasticsearch.es4sql.executors.QueryActionElasticExecutor;
 import org.elasticsearch.search.SearchHit;
 import org.elasticsearch.search.SearchHits;
-import org.elasticsearch.es4sql.domain.Delete;
 import org.elasticsearch.es4sql.exception.SqlParseException;
 import org.elasticsearch.es4sql.parse.SqlParser;
 

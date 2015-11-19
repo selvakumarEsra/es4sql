@@ -10,9 +10,7 @@ import org.elasticsearch.client.transport.TransportClient;
 
 import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.common.transport.InetSocketTransportAddress;
-import org.elasticsearch.index.query.QueryBuilders;
 
-import org.elasticsearch.plugin.nlpcn.RestSqlAction;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;

@@ -3,8 +3,8 @@ package org.elasticsearch.es4sql;
 
 import com.google.common.collect.ImmutableMap;
 
-import org.elasticsearch.plugin.nlpcn.ElasticJoinExecutor;
-import org.elasticsearch.plugin.nlpcn.HashJoinElasticExecutor;
+import org.elasticsearch.es4sql.executors.ElasticJoinExecutor;
+import org.elasticsearch.es4sql.executors.HashJoinElasticExecutor;
 import org.elasticsearch.search.SearchHit;
 import org.junit.Test;
 import org.junit.Assert;
