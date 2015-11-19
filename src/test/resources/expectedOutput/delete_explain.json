@@ -1,0 +1,24 @@
+{
+  "query" : {
+    "bool" : {
+      "must" : {
+        "bool" : {
+          "must" : [ {
+            "wildcard" : {
+              "firstname" : "A*"
+            }
+          }, {
+            "range" : {
+              "age" : {
+                "from" : 20,
+                "to" : null,
+                "include_lower" : false,
+                "include_upper" : true
+              }
+            }
+          } ]
+        }
+      }
+    }
+  }
+}
